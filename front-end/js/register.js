@@ -1,4 +1,4 @@
-const API_URL = "https://articlehub-backend-vbaj.onrender.com/";
+const API_URL = "https://articlehub-backend-vbaj.onrender.com";
 
 async function registerUser(){
 

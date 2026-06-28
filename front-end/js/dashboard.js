@@ -1,4 +1,4 @@
-const API_URL = "https://articlehub-backend-vbaj.onrender.com/";
+const API_URL = "https://articlehub-backend-vbaj.onrender.com";
 
 const username = localStorage.getItem("username");
 const userId = localStorage.getItem("userId");
