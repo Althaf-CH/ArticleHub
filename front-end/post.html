@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Post - ArticleHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>ArticleHub</h1>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-post.html">Create Post</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div id="postContainer" class="single-post-container">
+        <!-- Single post loads here -->
+    </div>
+
+    <div class="comments-section">
+
+        <h3>Comments</h3>
+
+        <div class="comment-box" id="commentBox">
+            <textarea id="commentText" placeholder="Write your comment..."></textarea>
+            <button onclick="addComment()">Post Comment</button>
+        </div>
+
+        <div id="commentsContainer">
+            <!-- Comments load here -->
+        </div>
+
+    </div>
+
+    <script src="js/post.js"></script>
+
+</body>
+</html>

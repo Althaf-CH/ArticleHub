@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ArticleHub - Blog Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>ArticleHub</h1>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-post.html">Create Post</a>
+            <a href="admin.html" id="adminLink">Admin</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <button onclick="logout()" id="logoutBtn">Logout</button>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h2>Share Ideas. Inspire People.</h2>
+        <p>Create, read, and discuss blogs with the ArticleHub community.</p>
+        <a href="create-post.html">Start Writing</a>
+    </div>
+
+    <div class="posts-section">
+
+        <h2 class="section-title">Latest Blog Posts</h2>
+
+<div class="filter-box">
+
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search posts by title, author, or content..."
+        onkeyup="filterPosts()"
+    >
+
+    <select id="categoryFilter" onchange="filterPosts()">
+        <option value="">All Categories</option>
+        <option value="Technology">Technology</option>
+        <option value="Programming">Programming</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Education">Education</option>
+        <option value="Business">Business</option>
+        <option value="Travel">Travel</option>
+        <option value="Food">Food</option>
+        <option value="Sports">Sports</option>
+        <option value="Lifestyle">Lifestyle</option>
+    </select>
+
+</div>
+
+<div id="postsContainer" class="posts-grid">
+    <!-- Posts will load here -->
+</div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

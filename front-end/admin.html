@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel - ArticleHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>ArticleHub Admin</h1>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="dashboard">
+
+        <div class="welcome-box">
+            <h2>Admin Dashboard</h2>
+            <p>Manage users, posts, and comments from one place.</p>
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3 id="totalUsers">0</h3>
+                <p>Total Users</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="totalPosts">0</h3>
+                <p>Total Posts</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="totalComments">0</h3>
+                <p>Total Comments</p>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">All Users</h2>
+        <div id="usersContainer" class="admin-table"></div>
+
+        <h2 class="section-title">All Posts</h2>
+        <div id="postsContainer" class="admin-table"></div>
+
+        <h2 class="section-title">All Comments</h2>
+        <div id="commentsContainer" class="admin-table"></div>
+
+    </div>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

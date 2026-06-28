@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Post - ArticleHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>ArticleHub</h1>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="form-container">
+
+        <h2>Edit Blog Post</h2>
+
+        <input type="text" id="title" placeholder="Enter Post Title">
+
+        <select id="category">
+            <option value="">Select Category</option>
+            <option value="Technology">Technology</option>
+            <option value="Programming">Programming</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Education">Education</option>
+            <option value="Business">Business</option>
+            <option value="Travel">Travel</option>
+            <option value="Food">Food</option>
+            <option value="Sports">Sports</option>
+            <option value="Lifestyle">Lifestyle</option>
+        </select>
+
+        <input type="text" id="description" placeholder="Short Description">
+
+        <input type="text" id="image" placeholder="Cover Image URL">
+
+        <textarea id="content" placeholder="Write your full blog content here..."></textarea>
+
+        <button onclick="updatePost()">Update Post</button>
+
+    </div>
+
+    <script src="js/edit-post.js"></script>
+
+</body>
+</html>

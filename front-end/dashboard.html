@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - ArticleHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>ArticleHub</h1>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="dashboard">
+
+        <div class="welcome-box">
+            <h2 id="welcomeText">Welcome</h2>
+            <p>Manage your blog posts and view your activity here.</p>
+
+            <a href="create-post.html" class="action-btn">Create New Post</a>
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3 id="totalPosts">0</h3>
+                <p>Total Posts</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="totalComments">0</h3>
+                <p>My Comments</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="commentsReceived">0</h3>
+                <p>Comments Received</p>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">My Blog Posts</h2>
+
+        <div id="myPostsContainer" class="posts-grid">
+            <!-- My posts load here -->
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
