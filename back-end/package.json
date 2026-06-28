@@ -1,5 +1,5 @@
 {
-  "name": "articlehub-backend",
+  "name": "back-end",
   "version": "1.0.0",
   "description": "ArticleHub Blog Platform Backend",
   "main": "server.js",
